@@ -13,11 +13,15 @@ namespace testLINQ
         {
             using (var db = new Context())
             {
-                var q =
-                    (from c in db.Data
-                    select c).Take(10);
-                foreach (var c in q)
-                    Console.WriteLine(c.Word);
+                var result =
+                    (from item in db. Data
+                     where item.Word.StartsWith(str)
+                     orderby item.Frequency descending, item.Word
+                     select item.Word).Take(10);
+
+                foreach (var item in result) {
+                    Console.WriteLine(item);
+                }
             }
         }
 
