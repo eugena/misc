@@ -4,7 +4,13 @@ using LinqToDB;
 using LinqToDB.Mapping;
 using LinqToDB.DataProvider.SQLite;
 
-
+/**
+ *   <connectionStrings>
+ *       <add name="Data"
+ *         connectionString = "Data Source=data.db;Version=3;FailIfMissing=True"
+ *         providerName     = "SQLite" />
+ *     </connectionStrings>
+ */
 namespace testLINQ
 {
     class Program
