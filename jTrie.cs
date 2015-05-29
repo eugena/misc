@@ -23,7 +23,7 @@ using System.Diagnostics;
  * Время разное:
  *     MonoDeveloperConcole: 1390 ms
  *     Linux terminal: 3153 ms
- *    
+ *     Windows terminal 3567 ms
  **/ 
 namespace textEditorKontur
 {
