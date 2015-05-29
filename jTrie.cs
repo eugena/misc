@@ -53,7 +53,7 @@ namespace textEditorKontur
                                 trie.Add(w);
                             }
                             m = Convert.ToUInt32 (line);
-                        } else if (m == 0) { // считываем словарь
+                        } else if (m == 0) { // продолжаем считывать словарь
                             string[] d = line.Split (' ');
                             Data.Add (d[0], Convert.ToUInt16(d[1]));
                         } else {  // ищем подстроку
