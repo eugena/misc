@@ -34,7 +34,7 @@ namespace textEditorKontur
             timer.Start();
 
             StreamReader sr= new StreamReader(Console.OpenStandardInput());
-            string line, aline;
+            string line;
             uint i = 0, n= 0, m = 0;
             jTrie trie = new jTrie();
             Dictionary<string, uint> Data = new Dictionary<string, uint>();
